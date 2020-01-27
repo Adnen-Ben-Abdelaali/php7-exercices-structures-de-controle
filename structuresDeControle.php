@@ -81,3 +81,9 @@ sont des lettres de A à Z. Lisez ensuite ce tableau avec une boucle for
 puis une boucle foreach, et affichez les indices et les valeurs 
 (la fonction chr(n) retourne le caractère dont le code ASCII vaut n).
 */
+$tab = [];
+//création du tableau
+for($i = 11; $i < 36; $i++) {
+  $tab[$i] = chr($i + 54);
+}
+// lecture du tableau et affichage des indices et des des valeurs avec la boucle for
