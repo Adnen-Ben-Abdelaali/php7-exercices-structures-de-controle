@@ -100,3 +100,20 @@ Utilisez une boucle while pour déterminer le premier entier obtenu
  par tirage aléatoire qui soit un multiple d’un nombre donné.
   Écrivez la variante utilisant la boucle do…while.
 */
+/*  Variante dde l'exercice utilisant la boucle while */
+$nombreDeDepart = 45;
+$nombreAleatoire = rand(0, 100);
+while( ($nombreAleatoire % $nombreDeDepart !== 0) || ($nombreAleatoire === 0) ) {
+  $nombreAleatoire = rand(10, 100);
+}
+echo 'nombreAleatoire = ' .$nombreAleatoire ."\n";
+
+/* Variante de l'exercice résolu avec do..while */
+$nombreDeDepartDo = 25;
+
+
+do{
+  $nombreAleatoireDo = rand(0, 100);
+} while ( ($nombreAleatoireDo % $nombreDeDepartDo !== 0) || ($nombreAleatoireDo === 0) );
+echo '$nombreAleatoireDo = ' .$nombreAleatoireDo ."\n";
+/***********************************************************************/
