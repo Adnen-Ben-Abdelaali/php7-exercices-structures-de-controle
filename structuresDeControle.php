@@ -83,7 +83,20 @@ puis une boucle foreach, et affichez les indices et les valeurs
 */
 $tab = [];
 //création du tableau
-for($i = 11; $i < 36; $i++) {
+for($i = 11; $i <= 36; $i++) {
   $tab[$i] = chr($i + 54);
 }
 // lecture du tableau et affichage des indices et des des valeurs avec la boucle for
+for($i = 11; $i <= 36; $i++) {
+  echo 'l\'indice i vaut : ' .$i . "\n" .'$tab[$i] = ' .$tab[$i] ." \n";
+}
+// lecture du tableau et affichage des indices et des valeurs correspendant à ces indices en utilisant la boucle foreach 
+foreach($tab as $key => $value) {
+  echo "la case d'indice $key du tableau vaut = " .$value ." \n";
+}
+/******************************************************************/
+/*
+Utilisez une boucle while pour déterminer le premier entier obtenu
+ par tirage aléatoire qui soit un multiple d’un nombre donné.
+  Écrivez la variante utilisant la boucle do…while.
+*/
